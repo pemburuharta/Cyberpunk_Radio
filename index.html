@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>INTERNET RADIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-view">
+    <div id="network-status" class="network-status">You are offline. Please check your connection.</div>
+
+    <div class="app-container">
+        <div class="app-bar">
+            <div class="app-bar-row">
+                <div class="nav-icon back-to-landing" id="back-to-landing">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                </div>
+                <div class="nav-icon back-to-genres" id="back-to-genres">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                </div>
+                <h1 class="app-title">US Radio</h1>
+                <div class="app-menu">
+                    <button id="about-button" class="player-control-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="app-subtitle" id="app-subtitle">Internet Radio</div>
+        </div>
+
+        <div class="container">
+            <!-- Landing View -->
+            <div id="landing-view" class="view">
+                <div class="landing-container">
+                    <div class="app-logo">
+                        <div class="logo-circle"></div>
+                        <div class="logo-circle"></div>
+                        <div class="logo-circle"></div>
+                        <div class="logo-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="22"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="app-tagline" data-text="Tune In To The Future">Tune In To The Future</div>
+                    <div class="landing-buttons">
+                        <button id="start-listening-btn" class="landing-btn primary-btn">Start Listening</button>
+                        <button id="about-help-btn" class="landing-btn secondary-btn">About / Help</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About/Help View -->
+            <div id="about-view" class="view">
+                <div class="about-container">
+                    <div class="tab-navigation">
+                        <button class="tab-button active" data-tab="about">About</button>
+                        <button class="tab-button" data-tab="help">Help</button>
+                    </div>
+                    
+                    <div id="about-tab" class="tab-content active">
+                        <div class="about-card">
+                            <h3 class="about-heading">About US Radio</h3>
+                            <p class="about-text">US Radio is a cyberpunk themed internet radio streaming application that lets you discover and listen to thousands of radio stations from across the United States.</p>
+                            <p class="about-text">Stream your favorite music, news, sports, and talk radio stations anywhere, anytime. The app uses the Radio Browser API to provide you with a comprehensive collection of stations organized by genre.</p>
+                        </div>
+                        
+                        <div class="about-card">
+                            <h3 class="about-heading">Features</h3>
+                            <ul class="about-list">
+                                <li>Stream thousands of US radio stations</li>
+                                <li>Browse stations by genre</li>
+                                <li>Search for specific stations</li>
+                                <li>Background playback</li>
+                                <li>Cyberpunk user interface</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="version-info">US Radio v1.0.0</div>
+                        <div class="credit-info">Powered by Radio Browser API</div>
+                    </div>
+                    
+                    <div id="help-tab" class="tab-content">
+                        <div class="about-card">
+                            <h3 class="about-heading">How to Use</h3>
+                            <ul class="about-list">
+                                <li>Select a genre from the home screen</li>
+                                <li>Browse stations within that genre</li>
+                                <li>Tap on a station to start playback</li>
+                                <li>Use the player controls at the bottom to pause/play</li>
+                                <li>Return to genres by tapping the back button</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="about-card">
+                            <h3 class="about-heading">Troubleshooting</h3>
+                            <ul class="about-list">
+                                <li>If a station won't play, try another one (some streams may be temporarily offline)</li>
+                                <li>Check your internet connection if you experience buffering</li>
+                                <li>For best performance, use on WiFi networks</li>
+                                <li>Restart the app if you encounter persistent issues</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="about-card">
+                            <h3 class="about-heading">Permissions</h3>
+                            <p class="about-text">This app requires the following permissions:</p>
+                            <ul class="about-list">
+                                <li>Internet: To stream radio stations</li>
+                                <li>Wake lock: To allow background playback</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Genres View -->
+            <div id="genres-view" class="view">
+                <div class="content">
+                    <h2 class="section-title">Popular Genres</h2>
+                    
+                    <div id="genres-loading" class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <div class="loading-text">Loading genres...</div>
+                    </div>
+                    
+                    <div id="genres" class="genres-grid"></div>
+                </div>
+            </div>
+            
+            <!-- Stations View -->
+            <div id="stations-view" class="view">
+                <div class="content">
+                    <div class="search-bar">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="station-search" class="search-input" placeholder="Search stations...">
+                    </div>
+                    
+                    <div id="stations-loading" class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <div class="loading-text">Loading stations...</div>
+                    </div>
+                    
+                    <div id="no-results" class="empty-state">
+                        <div class="empty-state-icon">🔍</div>
+                        <div>No stations found matching your search</div>
+                    </div>
+                    
+                    <div id="stations" class="station-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="player-bar" class="player-bar" style="display: none;">
+            <div class="now-playing-container">
+                <div class="now-playing-info">
+                    <div id="now-playing-title" class="now-playing-title">Not playing</div>
+                    <div class="now-playing-subtitle">US Radio</div>
+                </div>
+                <button id="close-player" class="player-control-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="player-controls">
+                <button id="play-pause-btn" class="player-control-btn primary-control-btn">
+                    <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                        <rect x="6" y="4" width="4" height="16"></rect>
+                        <rect x="14" y="4" width="4" height="16"></rect>
+                    </svg>
+                </button>
+            </div>
+            <audio id="audio-player" class="audio-element"></audio>
+        </div>
+
+        <div id="back-to-top" class="fab">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+        </div>
+    </div>
+
+    <script src="radio.js"></script>
+</body>
+</html>
